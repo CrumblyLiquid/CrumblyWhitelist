@@ -1,0 +1,21 @@
+name: Crumblywhitelist
+version: '${project.version}'
+main: com.crumblyliquid.crumblywhitelist.CrumblyWhitelist
+api-version: 1.18
+prefix: CW
+load: STARTUP
+authors: [ CrumblyLiquid ]
+description: Simple external whitelist plugin
+website: www.crumblyliquid.com
+
+commands:
+  crumblywhitelist:
+    description: CrumblyWhitelist base command.
+    permission: crumblywhitelist.all
+    usage: /<command>
+    aliases: [cw, cwhitelist]
+
+permissions:
+  crumblywhitelist.all:
+    description: Allows complete usage of CrumblyWhitelist
+    default: op
